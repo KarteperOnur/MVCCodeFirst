@@ -1,0 +1,16 @@
+--Product.cs
+	--ProductName
+
+--Category.cs
+	-CategoryName
+--Supplier.cs
+	-CompanyName
+
+Yukarıdaki her bir model için Controller/View yapılarını oluşturun.
+
+
+Her bir model için Create sayfası tanımlayın. Kullanıcı sayfaları kullanarak ilgili modelleri inputlara değer olarak girişini yaptıktan sonra her bir modelin listesini anasayfada gösterin.
+
+
+HomeController içerisinde bulunan Index View'da 3 adet tablo oluşturun. Bu tablolar modelleri temsil etsin. Eklemeler yapıldıkta veriler ilgili tablo içerisinde görüntülensin.
+

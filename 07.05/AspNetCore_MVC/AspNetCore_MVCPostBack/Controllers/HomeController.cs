@@ -10,18 +10,8 @@ namespace AspNetCore_MVCPostBack.Controllers
         //HttpGet
         //HttpPost
 
-        [HttpGet]
         public IActionResult Index()
         {
-            return View();
-        }
-
-
-        [HttpPost]
-        public IActionResult Index(Person person)
-        {
-
-
             return View();
         }
 
