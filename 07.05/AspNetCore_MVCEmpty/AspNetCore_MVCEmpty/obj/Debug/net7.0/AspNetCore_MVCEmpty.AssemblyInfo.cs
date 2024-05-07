@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AspNetCore_MVCEmpty")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8ac37d9c11df3854bd1bde120c38092b08adf0af")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+40055481ba8c79099c69e95a7e43eb013204937f")]
 [assembly: System.Reflection.AssemblyProductAttribute("AspNetCore_MVCEmpty")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AspNetCore_MVCEmpty")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

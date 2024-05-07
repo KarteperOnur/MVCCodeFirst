@@ -4,9 +4,9 @@ namespace AspNetCore_MVCEmpty.Controllers
 {
     public class ProductController:Controller
     {
-        public string Index()
+       public IActionResult Index()
         {
-            return "Ürün anasayfa";
+            return View();
         }
     }
 }
