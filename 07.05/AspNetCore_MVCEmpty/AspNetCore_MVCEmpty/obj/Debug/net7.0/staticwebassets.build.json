@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "a688GzHFMEMUFP0lvfsiPBa/6EcFccVNGAKKwm9HV+w=",
+  "Source": "AspNetCore_MVCEmpty",
+  "BasePath": "_content/AspNetCore_MVCEmpty",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
