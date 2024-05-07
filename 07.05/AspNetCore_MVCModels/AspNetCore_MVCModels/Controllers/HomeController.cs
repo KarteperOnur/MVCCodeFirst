@@ -7,16 +7,34 @@ namespace AspNetCore_MVCModels.Controllers
     {
         public IActionResult Index()
         {
-            Product product = new Product()
+
+
+            List<Product> products = new List<Product>()
             {
-                ID = 1,
+                new Product{ ID = 1,
                 ProductName = "Chai",
-                UnitPrice = 18
+                UnitPrice = 18},
+                new Product
+                {
+                     ID = 2,
+                ProductName = "Chang",
+                UnitPrice = 21
+                }
             };
+
+
+            //Product product = new Product()
+            //{
+            //    ID = 1,
+            //    ProductName = "Chai",
+            //    UnitPrice = 18
+            //};
+
+         
 
             //model transfer
             //15 dk
-            return View();
+            return View(products);
         }
     }
 }

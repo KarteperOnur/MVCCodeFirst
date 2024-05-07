@@ -1,7 +1,4 @@
-﻿@{
-    string firstName = "Fatih";
-    string lastName = "Günalp";
-}
+﻿@model List<AspNetCore_MVCModels.Models.Product>
 
 
 
@@ -15,9 +12,12 @@
 <body>
     <h1>Home/Index</h1>
    
+   @* <h2>@Model.ID @Model.ProductName @Model.UnitPrice</h2> *@
 
-    <h2>@firstName</h2>
-    <h2>@lastName</h2>
+    @foreach (AspNetCore_MVCModels.Models.Product p in Model)
+    {
+        <h2>@p.ProductName</h2>
+    }
 
 
 </body>
