@@ -7,7 +7,7 @@ namespace AspNetCore_MVCLayout.Controllers
     {
         public IActionResult Index()
         {
-            List<>
+          
             return View(CategoryData._categories.ToList());
         }
     }

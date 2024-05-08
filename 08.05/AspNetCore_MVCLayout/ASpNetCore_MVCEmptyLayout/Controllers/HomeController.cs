@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace AspNetCore_MVCLayout.Controllers
+namespace ASpNetCore_MVCEmptyLayout.Controllers
 {
-    public class ProductController : Controller
+    public class HomeController : Controller
     {
         public IActionResult Index()
         {
