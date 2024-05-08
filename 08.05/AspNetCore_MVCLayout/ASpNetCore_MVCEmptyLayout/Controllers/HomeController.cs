@@ -8,5 +8,7 @@ namespace ASpNetCore_MVCEmptyLayout.Controllers
         {
             return View();
         }
+
+        
     }
 }
