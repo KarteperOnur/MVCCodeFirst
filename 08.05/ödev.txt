@@ -1,0 +1,12 @@
+--Herkes kendi oluşturduğu veritabanını projeye DbFirst yaklaşımı ile dahil edecek.
+1-Program.cs içerisinde servislere MVC'i dahil et.
+2-Routing aktif et.
+3-UseStaticFiles aktif et.
+4-UseEndPoints metodunu düzenleyerek varsayılan controller ve action metodunu tayin et.
+5-Views klasöründe Shared isimli klasör oluştur.
+6-Shared içerisinde _Layout.cshtml oluştur.
+7-Controller klasörünü oluştur.
+8-Controller klasörü içerisinde HomeController isimli bir controller oluştur.
+9-HomeController içerisinde bulunan Index Action'a ait view oluştur. Bu view Layout kullanacak ve yukarıda oluşturulan Layout seç.
+
+-----------------------------
