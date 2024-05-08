@@ -35,29 +35,6 @@ namespace AspNetCoreMVC_NorthwindTemplate.Controllers
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         public IActionResult Privacy()
         {
             return View();
