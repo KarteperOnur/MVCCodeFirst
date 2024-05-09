@@ -5,6 +5,8 @@ VisualStudioVersion = 17.8.34525.116
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCore_MVC_DependencyInjection", "AspNetCore_MVC_DependencyInjection\AspNetCore_MVC_DependencyInjection.csproj", "{2E61BD04-BB80-4471-B5B8-C77BA2836A9E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependenctInjection_Samples", "DependenctInjection_Samples\DependenctInjection_Samples.csproj", "{0A99D16A-5892-42B9-BA4B-D0C0A62876C3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{2E61BD04-BB80-4471-B5B8-C77BA2836A9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E61BD04-BB80-4471-B5B8-C77BA2836A9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E61BD04-BB80-4471-B5B8-C77BA2836A9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A99D16A-5892-42B9-BA4B-D0C0A62876C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A99D16A-5892-42B9-BA4B-D0C0A62876C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A99D16A-5892-42B9-BA4B-D0C0A62876C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A99D16A-5892-42B9-BA4B-D0C0A62876C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
