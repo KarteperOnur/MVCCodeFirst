@@ -1,17 +1,25 @@
 ﻿
 @{
-    ViewData["Title"] = "Index";
+    
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>People</h1>
+<h1>@ViewData["Title"]</h1>
 
 <ul>
     <!--_people içerisinde bulunan verileri ViewBag kullanarak listeleyin-->
+    @foreach (var item in (ViewBag.People as List<Person>))
+    {
+        <li>@item.Firstname @item.Lastname</li>
+    }
 </ul>
 
 <hr />
 
 <ul>
     <!--_category içerisinde bulunan verileri ViewData kullanarak listeleyin.-->
+    @foreach(var item in (ViewData["Categories"] as List<Category>))
+    { 
+        <li>@item.CategoryName</li>
+    }
 </ul>
