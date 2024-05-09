@@ -1,0 +1,12 @@
+--Northwind veritabanını DbFirst yaklaşımı ile projeye dahil edin.
+--Repository Pattern kullanarak aşağıdaki classlar için servisler oluşturun (Servisler içerisinde CRUD işlemlerini gerçekleştirsin).
+	--Category
+	--Product
+	--Supplier
+
+--Dependency Injection ile Scoped,singleton,transient yapılarını kullanarak her servis için controller oluşturun.
+
+ICategoryService
+CategoryService
+
+
