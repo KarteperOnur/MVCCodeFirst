@@ -1,0 +1,46 @@
+﻿@model List<MVC_TagHelpers.Models.Northwind.Category>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@if (TempData["Success"] != null)
+{
+    <div class="alert alert-success">
+        <span>@TempData["Success"]</span>
+    </div>
+}
+else if (TempData["Error"] != null)
+{
+    <div class="alert alert-danger">
+        <span>@TempData["Error"]</span>
+    </div>
+}
+
+<table>
+   <thead class="table">
+       <tr>
+           <th>Category Id</th>
+           <th>Category Name</th>
+           <th>Description</th>
+           <th></th>
+       </tr>
+   </thead>
+   <tbody>
+      @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    <a href="/Category/Details/@item.CategoryId">@item.CategoryId</a>
+                </td>
+                <td>@item.CategoryName</td>
+                <td>@item.Description</td>
+                <td>
+                    <a href="/Category/Update/@item.CategoryId" class="btn btn-warning btn-sm">Update</a>
+                    <a href="/Category/Delete/@item.CategoryId" class="btn btn-danger btn-sm">Delete</a>
+                </td>
+            </tr>
+        }
+   </tbody>
+</table>
+

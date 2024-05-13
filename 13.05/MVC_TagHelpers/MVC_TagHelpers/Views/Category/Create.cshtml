@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+
+<div class="col-md-6 mx-auto">
+    <form method="post">
+        <div class="mb-2">
+            <label>Category Name</label>
+            <input type="text" class="form-control" name="CategoryName" />
+        </div>
+        <div class="mb-2">
+            <label>Description</label>
+            <textarea cols="3" rows="5" class="form-control" name="Description">
+
+            </textarea>
+        </div>
+        <button class="btn btn-primary" type="submit" >Create</button>
+        <a href="/Category/Index" class="btn btn-primary">Back</a>
+    </form>
+</div>
+

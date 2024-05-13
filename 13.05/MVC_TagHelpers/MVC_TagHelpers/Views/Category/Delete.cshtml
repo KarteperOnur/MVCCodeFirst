@@ -1,0 +1,23 @@
+﻿@model MVC_TagHelpers.Models.Northwind.Category
+@{
+    ViewData["Title"] = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="col-md-6 mx-auto">
+    <form method="post">
+        <div class="mb-2">
+            <input type="hidden" name="CategoryId" value="@Model.CategoryId" />
+          <h2>@Model.CategoryName</h2>
+        </div>
+        <div class="mb-2">
+            <p>
+                @Model.Description
+            </p>
+        </div>
+        <button class="btn btn-primary" type="submit">Delete</button>
+        <a href="/Category/Index" class="btn btn-primary">Back</a>
+    </form>
+</div>
+
+

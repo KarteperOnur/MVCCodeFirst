@@ -1,0 +1,17 @@
+﻿@model MVC_TagHelpers.Models.Northwind.Category
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="col-md-6 mx-auto">
+    <div class="card">
+        <div class="card-body">
+            <h1>@Model.CategoryName</h1>
+            <p>
+                @Model.Description
+            </p>
+        </div>
+    </div>
+</div>
+
