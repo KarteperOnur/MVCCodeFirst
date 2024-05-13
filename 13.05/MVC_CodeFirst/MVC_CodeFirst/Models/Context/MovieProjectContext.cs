@@ -6,6 +6,7 @@ namespace MVC_CodeFirst.Models.Context
     public class MovieProjectContext:DbContext
     {
         public DbSet<Movie> Movies { get; set; }
+        public DbSet<Genre> Genres { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
