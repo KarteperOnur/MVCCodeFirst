@@ -1,4 +1,4 @@
-﻿@model MVC_TagHelpers.Models.Northwind.Category
+﻿@model Category
 @{
     ViewData["Title"] = "Delete";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -6,7 +6,7 @@
 
 <div class="col-md-6 mx-auto">
     <form method="post">
-        <div class="mb-2">
+        <div  class="mb-2">
             <input type="hidden" name="CategoryId" value="@Model.CategoryId" />
           <h2>@Model.CategoryName</h2>
         </div>

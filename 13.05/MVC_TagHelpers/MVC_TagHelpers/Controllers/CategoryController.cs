@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MVC_TagHelpers.Models.Northwind;
 using MVC_TagHelpers.Repositories.Abstracts;
+using MVC_TagHelpers.RequestModels;
 
 namespace MVC_TagHelpers.Controllers
 {
@@ -28,19 +29,34 @@ namespace MVC_TagHelpers.Controllers
 
         //Kategori Oluşturma Sayfası
         [HttpPost]
-        public IActionResult Create(Category category)
+        public IActionResult Create(CategoryRequestModel category)
         {
-            try
+
+            if (ModelState.IsValid)
             {
-                _categoryRepository.AddCategory(category);
-                TempData["Success"] = "Kategori Eklendi!";
+
+                Category newCategory = new Category
+                {
+                    CategoryName = category.CategoryName,
+                    Description = category.Description,
+                };
+
+                try
+                {
+                    _categoryRepository.AddCategory(newCategory);
+                    TempData["Success"] = "Kategori Eklendi!";
+                }
+                catch (Exception ex)
+                {
+                    TempData["Error"] = ex.Message;
+                    throw;
+                }
+                return RedirectToAction("Index");
             }
-            catch (Exception ex)
+            else
             {
-                TempData["Error"] = ex.Message;
-                throw;
+                return View(category);
             }
-            return RedirectToAction("Index");
         }
 
         //Kategori Detay Sayfası
