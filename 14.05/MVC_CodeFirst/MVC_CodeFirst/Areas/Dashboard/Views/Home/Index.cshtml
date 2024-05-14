@@ -1,4 +1,5 @@
-﻿
+﻿@model List<MovieDashboardViewModel>
+
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Areas/Dashboard/Views/Shared/_DashboardLayout.cshtml";
@@ -25,64 +26,49 @@
 <div class="content">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-3 col-6">
 
-                <div class="small-box bg-info">
-                    <div class="inner">
-                        <h3>150</h3>
-                        <p>New Orders</p>
-                    </div>
-                    <div class="icon">
-                        <i class="ion ion-bag"></i>
-                    </div>
-                    <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
-                </div>
-            </div>
+            @if (Model != null)
+            {
+                Random rnd = new Random();
 
-            <div class="col-lg-3 col-6">
+                @foreach (var item in Model)
+                {
+                    string buttonClassName = "bg-info";
+                    int rndNumber = rnd.Next(0, 5);
 
-                <div class="small-box bg-success">
-                    <div class="inner">
-                        <h3>53<sup style="font-size: 20px">%</sup></h3>
-                        <p>Bounce Rate</p>
-                    </div>
-                    <div class="icon">
-                        <i class="ion ion-stats-bars"></i>
-                    </div>
-                    <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
-                </div>
-            </div>
+                    switch (rndNumber)
+                    {
+                        case 1:
+                            buttonClassName = "bg-info";
+                            break;
+                        case 2:
+                            buttonClassName = "bg-success";
+                            break;
+                        case 3:
+                            buttonClassName = "bg-warning";
+                            break;
+                        case 4:
+                            buttonClassName = "bg-danger";
+                            break;
+                    }
 
-            <div class="col-lg-3 col-6">
+                    <div class="col-lg-3 col-6">
 
-                <div class="small-box bg-warning">
-                    <div class="inner">
-                        <h3>44</h3>
-                        <p>User Registrations</p>
+                        <div class="small-box @buttonClassName">
+                            <div class="inner">
+                                <h3>@item.Name</h3>
+                                <p>@item.Description</p>
+                            </div>
+                            <div class="icon">
+                                <i class="ion ion-bag"></i>
+                            </div>
+                            <a href="/movieDetails/@item.Id" class="small-box-footer">Film Detayı <i class="fas fa-arrow-circle-right"></i></a>
+                        </div>
                     </div>
-                    <div class="icon">
-                        <i class="ion ion-person-add"></i>
-                    </div>
-                    <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-6">
-
-                <div class="small-box bg-danger">
-                    <div class="inner">
-                        <h3>65</h3>
-                        <p>Unique Visitors</p>
-                    </div>
-                    <div class="icon">
-                        <i class="ion ion-pie-graph"></i>
-                    </div>
-                    <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
-                </div>
-            </div>
-
+                }
+            }
         </div>
-        <div class="row">
+      @*   <div class="row">
             <div class="col-12">
                 <div class="card">
                     <div class="card-header">
@@ -128,7 +114,7 @@
                 </div>
 
             </div>
-        </div>
+        </div> *@
         <!-- /.row -->
     </div><!-- /.container-fluid -->
 </div>
