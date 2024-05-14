@@ -10,9 +10,19 @@ app.UseStaticFiles();
 //route
 app.UseRouting();
 //maproute
-app.MapControllerRoute(
-    name: "default", 
-    pattern: "{Controller=Home}/{Action=Index}/{id?}");
-    //https:localhost:7668/Home/Index/5
+
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllerRoute(
+      name: "default",
+      pattern: "{controller=Home}/{action=Index}/{id?}"
+    );
+
+
+    endpoints.MapControllerRoute(
+      name: "areas",
+      pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
+    );
+});
 
 app.Run();
